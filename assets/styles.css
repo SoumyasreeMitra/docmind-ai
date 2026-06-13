@@ -1,0 +1,199 @@
+.stApp{
+    background:#070b16;
+    color:white;
+}
+
+/* Sidebar */
+
+[data-testid="stSidebar"]{
+    background:
+    linear-gradient(
+        180deg,
+        #09090f,
+        #111827
+    );
+    border-right:1px solid #1f2937;
+}
+
+/* Hide Streamlit junk */
+
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+header{
+    visibility:hidden;
+}
+
+/* Hide auto page title */
+
+
+
+/* Hero */
+
+.hero-container{
+
+    padding:50px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #111827,
+    #1e1b4b
+    );
+
+    border:1px solid #312e81;
+}
+
+.hero-title{
+
+    font-size:72px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+    background:
+    linear-gradient(
+    90deg,
+    white,
+    #8b5cf6
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-subtitle{
+
+    font-size:28px;
+
+    color:white;
+}
+
+.hero-text{
+
+    font-size:18px;
+
+    color:#94a3b8;
+}
+
+.hero-stat{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:24px;
+
+    padding:25px;
+
+    text-align:center;
+
+    margin-top:20px;
+}
+
+.hero-stat h3{
+
+    color:#8b5cf6;
+
+    font-size:42px;
+}
+
+.hero-stat p{
+
+    color:#94a3b8;
+}
+
+/* Dashboard */
+
+.action-card{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:24px;
+
+    padding:25px;
+
+    min-height:180px;
+
+    transition:.3s;
+}
+
+.action-card:hover{
+
+    border:1px solid #8b5cf6;
+
+    transform:translateY(-5px);
+}
+
+.stat-card{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+}
+
+.stat-value{
+
+    font-size:50px;
+
+    color:#8b5cf6;
+
+    font-weight:800;
+}
+
+.doc-card{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin-bottom:15px;
+}
+/* Sidebar branding */
+
+[data-testid="stSidebar"]{
+    min-width:280px;
+}
+
+.sidebar-title{
+    font-size:32px;
+    font-weight:800;
+    color:white;
+}
+
+.sidebar-sub{
+    color:#9ca3af;
+    font-size:14px;
+}
+
+.profile-card{
+    margin-top:50px;
+    padding:15px;
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:18px;
+}
