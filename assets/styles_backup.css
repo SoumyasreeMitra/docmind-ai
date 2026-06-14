@@ -1,0 +1,786 @@
+.stApp{
+    background:#070b16;
+    color:white;
+}
+
+/* Sidebar */
+
+[data-testid="stSidebar"]{
+    background:
+    linear-gradient(
+        180deg,
+        #09090f,
+        #111827
+    );
+    border-right:1px solid #1f2937;
+}
+
+/* Hide Streamlit junk */
+
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+header{
+    visibility:hidden;
+}
+
+/* Hide auto page title */
+
+
+
+/* Hero */
+
+.hero-container{
+
+    padding:50px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #111827,
+    #1e1b4b
+    );
+
+    border:1px solid #312e81;
+}
+
+.hero-title{
+
+    font-size:72px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+    background:
+    linear-gradient(
+    90deg,
+    white,
+    #8b5cf6
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-subtitle{
+
+    font-size:28px;
+
+    color:white;
+}
+
+.hero-text{
+
+    font-size:18px;
+
+    color:#94a3b8;
+}
+
+.hero-stat{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:24px;
+
+    padding:25px;
+
+    text-align:center;
+
+    margin-top:20px;
+}
+
+.hero-stat h3{
+
+    color:#8b5cf6;
+
+    font-size:42px;
+}
+
+.hero-stat p{
+
+    color:#94a3b8;
+}
+
+/* Dashboard */
+
+.action-card{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:24px;
+
+    padding:25px;
+
+    min-height:180px;
+
+    transition:.3s;
+}
+
+.action-card:hover{
+
+    border:1px solid #8b5cf6;
+
+    transform:translateY(-5px);
+}
+
+.stat-card{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+}
+
+.stat-value{
+
+    font-size:50px;
+
+    color:#8b5cf6;
+
+    font-weight:800;
+}
+
+.doc-card{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin-bottom:15px;
+}
+/* Sidebar branding */
+
+[data-testid="stSidebar"]{
+    min-width:280px;
+}
+
+.sidebar-title{
+    font-size:32px;
+    font-weight:800;
+    color:white;
+}
+
+.sidebar-sub{
+    color:#9ca3af;
+    font-size:14px;
+}
+
+.profile-card{
+    margin-top:50px;
+    padding:15px;
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:18px;
+
+}
+/* =========================
+   PREMIUM SIDEBAR
+========================= */
+
+.logo-container{
+    margin-bottom:20px;
+}
+
+.logo-title{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    background:
+    linear-gradient(
+    90deg,
+    #ffffff,
+    #a855f7
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+.logo-subtitle{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+    margin-top:5px;
+}
+
+.profile-card{
+
+    background:
+    linear-gradient(
+    145deg,
+    #111827,
+    #1a2240
+    );
+
+    border:1px solid rgba(
+    255,
+    255,
+    255,
+    0.08
+    );
+
+    border-radius:20px;
+
+    padding:18px;
+
+    margin-top:50px;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.stTextInput input{
+
+    background:#121827 !important;
+
+    border:1px solid rgba(
+    255,
+    255,
+    255,
+    0.08
+    ) !important;
+
+    border-radius:18px !important;
+
+    color:white !important;
+}
+
+/* =========================
+   GLASS EFFECT CARDS
+========================= */
+
+.action-card{
+
+    background:
+    linear-gradient(
+    145deg,
+    #121827,
+    #171f34
+    );
+
+    border-radius:24px;
+
+    padding:30px;
+
+    border:1px solid rgba(
+    255,
+    255,
+    255,
+    0.08
+    );
+
+    min-height:220px;
+
+    transition:all .3s ease;
+}
+
+.action-card:hover{
+
+    transform:
+    translateY(-8px);
+
+    border:1px solid #8b5cf6;
+
+    box-shadow:
+    0 0 35px rgba(
+    139,
+    92,
+    246,
+    .25
+    );
+}
+
+.action-card h1{
+
+    font-size:50px;
+}
+
+.action-card h3{
+
+    font-size:26px;
+}
+
+.action-card p{
+
+    color:#94a3b8;
+}
+
+/* =========================
+   ANALYTICS
+========================= */
+
+.stat-card{
+
+    background:
+    linear-gradient(
+    145deg,
+    #121827,
+    #171f34
+    );
+
+    border-radius:24px;
+
+    border:1px solid rgba(
+    255,
+    255,
+    255,
+    0.05
+    );
+
+    padding:25px;
+}
+
+.stat-value{
+
+    font-size:56px;
+
+    font-weight:800;
+
+    color:#8b5cf6;
+}
+
+/* =========================
+   DOCUMENTS
+========================= */
+
+.doc-card{
+
+    background:
+    linear-gradient(
+    145deg,
+    #121827,
+    #171f34
+    );
+
+    border-radius:20px;
+
+    padding:22px;
+
+    margin-bottom:15px;
+
+    border:1px solid rgba(
+    255,
+    255,
+    255,
+    0.06
+    );
+}
+
+.doc-card:hover{
+
+    border:1px solid #8b5cf6;
+}
+
+
+/* =========================
+   TURBOLEARN UI
+========================= */
+
+.dashboard-hero{
+
+    padding:50px;
+
+    border-radius:32px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #0f172a,
+    #1e1b4b
+    );
+
+    border:1px solid rgba(
+    139,
+    92,
+    246,
+    .25
+    );
+
+    margin-bottom:20px;
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:
+    rgba(
+    139,
+    92,
+    246,
+    .15
+    );
+
+    color:#c4b5fd;
+
+    margin-bottom:20px;
+}
+
+.dashboard-title{
+
+    font-size:72px;
+
+    font-weight:900;
+
+    margin:0;
+
+    background:
+    linear-gradient(
+    90deg,
+    white,
+    #a855f7
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+.dashboard-subtitle{
+
+    font-size:28px;
+
+    color:white;
+
+    margin-top:10px;
+}
+
+.dashboard-desc{
+
+    color:#94a3b8;
+
+    font-size:18px;
+
+    max-width:800px;
+}
+
+.section-title{
+
+    color:white;
+
+    font-weight:700;
+}
+
+.card-icon{
+
+    font-size:50px;
+
+    margin-bottom:15px;
+}
+
+.action-card{
+
+    backdrop-filter:blur(16px);
+}
+
+.stat-title{
+
+    color:#94a3b8;
+
+    margin-top:8px;
+}
+
+.doc-name{
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+}
+
+.doc-status{
+
+    color:#94a3b8;
+
+    margin-top:8px;
+}
+
+.chat-header{
+
+    padding:20px 0;
+}
+
+.chat-header h1{
+
+    font-size:60px;
+}
+
+.chat-header p{
+
+    color:#94a3b8;
+}
+
+.docs-header h1{
+
+    font-size:60px;
+}
+
+.docs-header p{
+
+    color:#94a3b8;
+}
+section[data-testid="stSidebarNav"] {
+    display: none !important;
+}
+/* =================================
+   PREMIUM HERO
+================================= */
+
+.dashboard-hero{
+    position:relative;
+
+    padding:60px;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+    135deg,
+    #0f172a,
+    #1e1b4b
+    );
+
+    border:1px solid rgba(139,92,246,.2);
+}
+
+.hero-glow{
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:
+    rgba(168,85,247,.15);
+
+    filter:blur(80px);
+
+    top:-80px;
+
+    right:-80px;
+}
+
+/* =================================
+   CHAT HERO
+================================= */
+
+.chat-hero{
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #111827,
+    #1e1b4b
+    );
+
+    margin-bottom:20px;
+
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.chat-hero h1{
+
+    margin:0;
+
+    font-size:52px;
+}
+
+.chat-hero p{
+
+    color:#94a3b8;
+
+    margin-top:10px;
+
+    font-size:18px;
+}
+
+/* =================================
+   DOCUMENTS HERO
+================================= */
+
+.docs-hero{
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #111827,
+    #172554
+    );
+
+    margin-bottom:20px;
+
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.docs-hero h1{
+
+    margin:0;
+
+    font-size:52px;
+}
+
+.docs-hero p{
+
+    color:#94a3b8;
+
+    margin-top:10px;
+}
+
+/* =================================
+   FILE UPLOADER
+================================= */
+
+[data-testid="stFileUploader"]{
+
+    border-radius:24px;
+
+    border:1px dashed #8b5cf6;
+
+    background:#121827;
+}
+
+/* =================================
+   CHAT INPUT
+================================= */
+
+[data-testid="stChatInput"]{
+
+    border-radius:24px;
+}
+
+/* =================================
+   METRICS
+================================= */
+
+[data-testid="metric-container"]{
+
+    background:
+    linear-gradient(
+    145deg,
+    #121827,
+    #171f34
+    );
+
+    border-radius:22px;
+
+    padding:20px;
+
+    border:1px solid rgba(
+    255,
+    255,
+    255,
+    .05
+    );
+}
+
+/* =================================
+   HOVER EFFECTS
+================================= */
+
+.doc-card:hover,
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+    transition:.3s;
+
+    box-shadow:
+    0 0 30px rgba(
+    139,
+    92,
+    246,
+    .15
+    );
+}
+[data-testid="stSidebar"] a {
+
+    border-radius:14px;
+
+    transition:.3s;
+}
+
+[data-testid="stSidebar"] a:hover {
+
+    background:#1e293b;
+
+    transform:translateX(4px);
+}
+
+[data-testid="stSidebar"] a[aria-current="page"] {
+
+    background:
+    linear-gradient(
+    90deg,
+    #8b5cf6,
+    #6366f1
+    );
+
+    color:white;
+
+    font-weight:700;
+}
+[data-testid="stChatMessage"]{
+
+    border-radius:20px;
+
+    padding:10px;
+}
+
+[data-testid="stChatMessage"]:nth-child(odd){
+
+    background:#111827;
+}
+
+[data-testid="stChatMessage"]:nth-child(even){
+
+    background:#172554;
+}

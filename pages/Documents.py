@@ -1,10 +1,28 @@
 import streamlit as st
+with open("assets/styles.css") as f:
+    st.markdown(
+        f"<style>{f.read()}</style>",
+        unsafe_allow_html=True
+    )
+import os
 
-st.title("📄 Documents")
+from utils.rag_pipeline import build_database
 
-st.caption(
-    "Upload and manage PDFs"
-)
+UPLOAD_DIR = "uploads"
+
+st.markdown("""
+<div class="docs-hero">
+
+<h1>
+📄 Document Library
+</h1>
+
+<p>
+Upload PDFs and build your AI knowledge base.
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 
 uploaded_files = st.file_uploader(
     "Upload PDF Files",
@@ -14,29 +32,50 @@ uploaded_files = st.file_uploader(
 
 if uploaded_files:
 
+    for file in uploaded_files:
+
+        save_path = os.path.join(
+            UPLOAD_DIR,
+            file.name
+        )
+
+        with open(save_path, "wb") as f:
+            f.write(file.getbuffer())
+
+        with st.spinner(
+            f"Indexing {file.name}..."
+        ):
+            build_database(save_path)
+
     st.success(
-        f"{len(uploaded_files)} file(s) uploaded"
+        "Documents indexed successfully!"
     )
 
 st.markdown("---")
 
 st.subheader("Document Library")
 
-docs = [
-    "Operating Systems.pdf",
-    "DBMS Notes.pdf",
-    "Software Engineering.pdf"
-]
+if os.path.exists(UPLOAD_DIR):
 
-for doc in docs:
+    files = os.listdir(UPLOAD_DIR)
 
-    col1,col2 = st.columns([8,1])
+    if files:
 
-    with col1:
-        st.info(f"📘 {doc}")
+        for file in files:
 
-    with col2:
-        st.button(
-            "🗑️",
-            key=doc
+            st.markdown(f"""
+<div class="doc-card">
+
+<h4>📘 {file}</h4>
+
+<p>
+Indexed and ready for chat
+</p>
+
+</div>
+""", unsafe_allow_html=True)
+
+    else:
+        st.warning(
+            "No documents uploaded."
         )
