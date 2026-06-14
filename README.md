@@ -64,9 +64,7 @@ The platform combines Google's Gemini models with LangChain and FAISS to provide
 ![Home](screenshots/home2.png)
 ## 🏠 Dashboard
 
-> Save screenshot as:
->
-> `screenshots/dashboard.png`
+
 
 ![Dashboard](screenshots/dashboard1.png)
 ![Dashboard](screenshots/dashboard2.png)
@@ -77,9 +75,7 @@ The platform combines Google's Gemini models with LangChain and FAISS to provide
 
 ## 💬 AI Research Assistant
 
-> Save screenshot as:
->
-> `screenshots/chat.png`
+
 
 ![Chat](screenshots/chat1.png)
 ![Chat](screenshots/chat2.png)
@@ -88,9 +84,7 @@ The platform combines Google's Gemini models with LangChain and FAISS to provide
 
 ## 📄 Document Library
 
-> Save screenshot as:
->
-> `screenshots/documents.png`
+
 
 ![Documents](screenshots/document1.png)
 ![Documents](screenshots/document2.png)
@@ -99,13 +93,7 @@ The platform combines Google's Gemini models with LangChain and FAISS to provide
 
 ## ⚙️ Settings Page
 
-> Save screenshot as:
->
-> `screenshots/settings.png`
 
-![Settings](screenshots/settings.png)
-
----
 
 # 🏗️ Architecture
 
